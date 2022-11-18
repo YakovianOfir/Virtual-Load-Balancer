@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "required": [
+    "nodes",
+    "tasks"
+  ],
+  "properties": {
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "nodeName",
+          "taskType"
+        ],
+        "properties": {
+          "nodeName": {
+            "type": "string"
+          },
+          "taskType": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "taskName",
+          "taskType",
+          "ts",
+          "duration"
+        ],
+        "properties": {
+          "taskName": {
+            "type": "string"
+          },
+          "taskType": {
+            "type": "string"
+          },
+          "ts": {
+            "type": "number"
+          },
+          "duration": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}

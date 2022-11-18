@@ -1,0 +1,44 @@
+{
+  "nodes": [{
+    "nodeName": "node1",
+    "taskType": "queueingTask"
+    },
+    {
+      "nodeName": "node2",
+      "taskType": "queueingTask"
+    },
+    {
+      "nodeName": "node3",
+      "taskType": "webTask"
+    },
+    {
+      "nodeName": "node4",
+      "taskType": "dbTask"
+    }
+  ],
+  "tasks": [{
+    "taskName": "queue job 1",
+    "taskType": "queueingTask",
+    "ts": 0,
+    "duration": 15
+  },
+    {
+      "taskName": "request for bing",
+      "taskType": "webTask",
+      "ts": 0,
+      "duration": 10
+    },
+    {
+      "taskName": "queue job 2",
+      "taskType": "queueingTask",
+      "ts": 1,
+      "duration": 3
+    },
+    {
+      "taskName": "queue job 3",
+      "taskType": "queueingTask",
+      "ts": 5,
+      "duration": 3
+    }
+  ]
+}
