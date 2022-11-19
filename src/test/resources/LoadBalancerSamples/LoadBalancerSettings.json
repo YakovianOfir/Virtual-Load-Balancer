@@ -21,7 +21,7 @@
     "taskType": "queueingTask",
     "ts": 0,
     "duration": 15
-  },
+    },
     {
       "taskName": "request for bing",
       "taskType": "webTask",
